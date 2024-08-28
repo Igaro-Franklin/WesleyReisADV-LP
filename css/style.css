@@ -98,8 +98,25 @@
     align-items: center;
 }
 
+.textoSegSec span{
+    color: #C19663;
+    font-size: 22px;
+}
+
+.textoSegSec h2{
+    font-size: 35px;
+}
+
 .textoSegSec p{
     width: 30%;
+}
+
+.conteiner-vantagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .container-cards-info{
@@ -108,19 +125,44 @@
 }
 
 .card-info{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     margin: auto 15px;
+    padding: auto 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.card-info p{
+    font-size: 25px;
+}
+
+.bg01{
+    background-color: #1F1B13;
+    color: white;
+}
+
+.bg02{
+    background-color: #C19663;
 }
 
 
 /*--------------------------------------------------------------------------- Terceira Section*/
 
 .TerceiraSection{
-    width: 100%;
+    padding: 150px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: green;
-    padding-bottom: 150px;
+    align-items: center;
+    color: white;
+    background: linear-gradient(162deg, rgb(0, 0, 0) 0%, rgba(1, 1, 1, 0.9) 50%, rgb(0, 0, 0) 100%), url(/img/bg/national.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .text-terc-section{
@@ -128,10 +170,20 @@
     text-align: center;
 }
 
+.text-terc-section p{
+    color: #C19663;
+    font-size: 25px;
+}
+
+.text-terc-section h3{
+    font-size: 30px;
+}
+
 .cards-serv{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .card-do-serv{
@@ -139,14 +191,43 @@
     margin: 20px;
     text-align: center;
     padding: 10px;
-    background-color: blue;
+    border-radius: 5px;
+    transition: ease-in .4s;
+}
+
+.card-do-serv:hover{
+    border: solid 1px white;
+    background: linear-gradient(180deg, rgba(126, 84, 22, 0.301) 0%, rgba(19,16,11,1) 100%);
 }
 
 .card-do-serv img{
     width: 30%;
 }
 
+.card-do-serv h4{
+    font-size: 25px;
+}
+
+.card-do-serv p{
+    font-size: 22px;
+    color: rgb(168, 168, 168);
+}
+
 /*--------------------------------------------------------------------------- Quarta Section*/
+
+.QuartaSection{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    padding: 10px 0;
+    margin: -100px auto auto;
+    background-color: #C19663;
+    border-radius: 10px;
+}
 
 /*--------------------------------------------------------------------------- Telas menores*/
 
