@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /*--------------------------------------------------------------------------- Primeira Section*/
 
 #PrimeiraSection{
@@ -49,21 +54,25 @@
 /*--------------------------------------------------------------------------- Segunda Section*/
 
 #SegundaSection{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: -30px;
 }
 
 .cards{
     width: 80%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .conteudosCards{
-    margin-top: -30px;
+    width: 300px;
     color: white;
     display: flex;
+    padding: 10px;
     background: linear-gradient(90deg, rgb(36, 30, 20, 1) 0%, rgba(38,32,23,1) 20%, rgba(44,37,27,1) 80%, rgba(36, 30, 20, 1) 100%);
     box-shadow: black 5px 5px 25px;
     transition: ease-in .4s;
@@ -112,6 +121,7 @@
 }
 
 .conteiner-vantagem{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,33 +130,50 @@
 }
 
 .container-cards-info{
+    width: 100%;
     display: flex;
-    margin: auto 100px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-info{
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: auto 15px;
-    padding: auto 10px;
+    margin: 10px 15px;
     border-radius: 5px;
     box-shadow: 1px 1px 10px black;
+
 }
 
 .card-info p{
     font-size: 25px;
+    margin: 10px;
+}
+
+.card-info span{
+    margin: auto 10px;
 }
 
 .bg01{
     background-color: #1F1B13;
     color: white;
+    transition: ease-in .4s;
+}
+
+.bg01:hover{
+    background: linear-gradient(180deg, rgb(31, 27, 19) 0%, rgba(83,50,0,1) 100%);
 }
 
 .bg02{
     background-color: #C19663;
+    transition: ease-in .4s;
+}
+
+.bg02:hover{
+    background: linear-gradient(180deg, #C19663 0%, rgba(83,50,0,1) 100%);
 }
 
 
@@ -235,6 +262,11 @@
     #PrimeiraSection{
         padding: 0 7%;
     }
+
+    .container-cards-info{
+        flex-wrap: wrap;
+        height: auto;
+    }
 }
 
 @media (min-width: 650px ) and (max-width: 829px) {
@@ -244,4 +276,65 @@
     .textoPrimSec h1{
         font-size: 35px;
     }
+
+    #TerceiraSection{
+        padding: 80px auto;
+    }
+}
+
+@media (max-width: 650px){
+    #PrimeiraSection{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #PrimeiraSection h1{
+        font-size: 35px;
+    }
+
+    #PrimeiraSection img{
+        margin: auto;
+        width: 100%;
+    }
+
+    .textoPrimSec{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoSegSec{
+        flex-direction: column;
+    }
+
+    .textoSegSec p{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    #TerceiraSection{
+        padding: 50px auto;
+    }
+    
+}
+
+
+@media (max-width: 450px){
+    
+    #PrimeiraSection h1{
+        margin: 40px 0 20px;
+        font-size: 30px;
+    }
+
+    .textoSegSec{
+        margin: 10px;
+    }
+    #TerceiraSection{
+        padding: 50px auto;
+    }
+
+    .QuartaSection{
+        width: 100%;
+    }
+
 }
