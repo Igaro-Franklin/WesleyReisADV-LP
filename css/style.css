@@ -23,7 +23,7 @@
 }
 
 .textoPrimSec h1{
-    font-size: 55px;
+    font-size: 40px;
 }
 
 .textoPrimSec p{
@@ -145,7 +145,6 @@
     margin: 10px 15px;
     border-radius: 5px;
     box-shadow: 1px 1px 10px black;
-
 }
 
 .card-info p{
@@ -272,6 +271,10 @@
 @media (min-width: 650px ) and (max-width: 829px) {
     #PrimeiraSection{
         padding: 0 5%;
+        text-align: center;
+    }
+    .textoPrimSec{
+        text-align: center;
     }
     .textoPrimSec h1{
         font-size: 35px;
@@ -301,6 +304,7 @@
         width: 80%;
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .textoSegSec{
@@ -335,6 +339,11 @@
 
     .QuartaSection{
         width: 100%;
+    }
+
+    .card-info{
+        width: 280px;
+        padding: 10px;
     }
 
 }
