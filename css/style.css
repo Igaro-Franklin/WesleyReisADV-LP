@@ -42,7 +42,20 @@
     transition: all .6s;
 }
 
-.btn-whats:hover{
+.instagram-button {
+    font-size: 25px;
+    color: white;
+    padding: 15px 30px;
+    margin: 15px auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .6s;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+
+.btn-whats:hover, .instagram-button:hover{
     background-color: #CDA36C;
 }
 
